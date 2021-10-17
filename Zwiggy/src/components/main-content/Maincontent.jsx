@@ -1,8 +1,9 @@
 import React from 'react'
+import Searchbar from './Searchbar'
 const Maincontent = () => {
   return (
-    <div>
-      <h1>Main Block</h1>
+    <div className="container-fluid">
+      <Searchbar />
     </div>
   )
 }

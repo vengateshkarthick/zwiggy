@@ -7,7 +7,7 @@ const App = () => {
     <React.Fragment>
       <Navbar />
       <div
-        className="d-flex justify-content-center align-items-center m-1"
+        className="d-flex m-2"
         style={{
           height: 'calc(100% - 150px)',
           position: 'absolute',

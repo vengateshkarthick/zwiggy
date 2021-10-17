@@ -16,8 +16,6 @@ body .footer {
 body .footer ul li {
   cursor: pointer;
   list-style-type: none;
-  font-size: 1.25rem;
-  font-weight: 600;
 }
 body .footer ul li:hover {
   color: blue;
