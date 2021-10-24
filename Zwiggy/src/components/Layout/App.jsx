@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import Maincontent from './main-content/Maincontent'
+import Maincontent from '../views/Maincontent'
 import Navbar from './Navbar'
 const App = () => {
   return (
