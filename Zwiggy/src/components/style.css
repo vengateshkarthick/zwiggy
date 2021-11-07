@@ -1,10 +1,31 @@
 body .navbar {
-  background-color: #3db34a;
+  background-color: #ffffff;
 }
-body .navbar h4 {
-  color: #ffffff;
+body .navbar .link {
+  cursor: pointer;
+  color: "black";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+}
+body .navbar .link:hover {
+  color: #3db34a;
+}
+body .filterbar {
+  background-color: #ffffff;
+}
+body .filterbar .link {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+body .ratings {
+  background-color: #3db34a;
+  color: #ffffff;
 }
 body .footer {
   width: 100%;

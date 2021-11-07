@@ -1,13 +1,32 @@
 $background-color: #3db34a;
 body {
   .navbar {
-    background-color: $background-color;
-
-    h4 {
-      color: #ffffff;
+    background-color: #ffffff;
+    .link{
+      cursor: pointer;
+    
+      color: 'black';
+      user-select: none;
       font-family: "Poppins", sans-serif;
-      font-weight: 600;
+      &:hover{
+        color: $background-color;
+
+      }
     }
+    
+  }
+  .filterbar {
+    background-color: #ffffff;
+    .link{
+      user-select: none;
+      font-family: "Poppins", sans-serif;
+    
+    }
+    
+  }
+  .ratings{
+    background-color: $background-color;
+    color:#ffffff;
   }
 
   .footer {
