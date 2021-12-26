@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Maincontent from '../views/Maincontent'
 import Navbar from './Navbar'
+import Routers from '../../routes'
 const App = () => {
   return (
     <React.Fragment>
@@ -15,7 +16,7 @@ const App = () => {
           width: 'calc(100% - 1%)',
         }}
       >
-        <Maincontent />
+       { Routers && <Routers/>}
       </div>
       <Footer />
     </React.Fragment>

@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import React, { useState } from "react";
 interface searchBarprops {
   searchapi?: (search: string) => any;

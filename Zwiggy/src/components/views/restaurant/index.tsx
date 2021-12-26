@@ -1,9 +1,11 @@
 import React from 'react'
 
-
-export function Restaurant() {
+const RestaurantDetails = () => {
     return (
         <div>
+            {"Hi Page for a restaurant"}
         </div>
     )
 }
+
+export default RestaurantDetails

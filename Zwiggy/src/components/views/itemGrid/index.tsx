@@ -10,8 +10,13 @@ const Itemgrid = () => {
                 <div className="card p-1" style={{ width: "18rem" }}>
                    
                     <img src={header} className="card-img-top" alt='Restaurant' />
-                    <div className="card-title">
-                        Dosa
+                    <div 
+                       className="card-title" 
+                       style={{
+                           fontWeight: 'bold'
+                       }}
+                    >
+                     {"Mad & Cheese"}
                     </div>
                     <div className="card-body">
                         <div className="card-text">
@@ -22,12 +27,12 @@ const Itemgrid = () => {
                                     </div>
                                 </div>
                                 <div className="row row-cols-12 justify-content-between align-items-center">
-                                    <div className="col col-auto p-1">Quantity</div>
-                                    <div className="col col-auto p-1">{"2"}</div>
+                                    <div className="col col-auto p-1">Order completed</div>
+                                    <div className="col col-auto p-1">{"20000"}</div>
                                 </div>
                                 <div className="row row-cols-12 justify-content-between align-items-center">
-                                    <div className="col col-auto p-1">Rate</div>
-                                    <div className="col col-auto p-1">{"Rs. 200 "}</div>
+                                    <div className="col col-auto p-1">Take and away</div>
+                                    <div className="col col-auto p-1">{"Available"}</div>
                                 </div>
                                 <div className="row row-cols-12 justify-content-between align-items-center">
                                     <div className="col col-auto p-1">More</div>
