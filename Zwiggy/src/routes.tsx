@@ -2,7 +2,6 @@ import {BrowserRouter, Route, Routes } from "react-router-dom";
 import React from 'react'
 import Maincontent from "./components/views/Maincontent";
 import RestaurantDetails from "./components/views/restaurant";
-import App from "./components/Layout/App";
 const Routers = () => {
     return (
         <BrowserRouter>
