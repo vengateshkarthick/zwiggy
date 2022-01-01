@@ -6,7 +6,7 @@ const Maincontent = () => {
   return (
     <>
       <div className="container-fluid d-flex flex-column">
-        <div className='d-flex justify-content-center align-items-center'>
+        <div className='d-flex flex-wrap justify-content-center align-items-center'>
             <div className="col col-6 col-sm-6 col-md-4">
               <img 
                  src={header} 
