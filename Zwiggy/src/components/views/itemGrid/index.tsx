@@ -1,29 +1,21 @@
-import * as React from 'react';
+import React, {useContext} from 'react';
 import { NavLink } from 'react-router-dom';
 import header from '../../../images/restaurant.png'
 import Filter from '../Filter/filter'
-const Itemgrid = () => {
+
+import {ItemgridContext, useItemgrid} from './useItemgrid'
+const ItemgridView = () => {
+    const contextVal = useContext(ItemgridContext)
+    const {
+        hotelList
+    } = contextVal
     const getRatings = (i: number) => <span dangerouslySetInnerHTML={{ __html: `${String.fromCharCode(9733)} ${i}`}}></span>
-    const hotelList: Array<{
-        hotel_name: string,
-        ratings: number,
-        average_oreder_completed : number,
-        hotel_id: string,
-        can_take_order: boolean,
-        take_away: boolean
-    }> = [
-          {
-            hotel_name: 'Mad&Cheese',
-            ratings: 4,
-            average_oreder_completed: 100,
-            hotel_id: '89800',
-            can_take_order: true,
-            take_away: true
-            
-         }
-    ]
+    
     const layout = () => hotelList?.map(item => (
-        <div className="col col-6 col-md-4 fs-6" style={{ fontFamily: "Poppins" }}>
+        <div 
+            className="col col-auto m-1 fs-6" 
+             style={{ fontFamily: "Poppins" }}
+        >
             <div className="card p-1" style={{ width: "18rem" }}>
 
                 <img src={header} className="card-img-top" alt='Restaurant' />
@@ -45,7 +37,7 @@ const Itemgrid = () => {
                                     Ratings
                                 </div>
                                 <div className="col col-auto ratings rounded fw-bold"> 
-                                {getRatings(item.ratings)}
+                                {item.ratings && getRatings(item.ratings)}
                                 </div>
                             </div>
                             <div 
@@ -97,15 +89,25 @@ const Itemgrid = () => {
 
     ))
     return (
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column m-auto">
             <div className = 'border border-bottom mb-1'>
                 <Filter />
             </div>
-            <div className="d-flex justify-content-center align-items-center">
+            <div 
+              className="d-flex flex-wrap justify-content-evenly align-items-center">
                 {layout()}
             </div>
         </div>
         
     )
 }
-export default Itemgrid;
+
+
+export default function Itemgrid () {
+    const val = useItemgrid()
+    return (
+        <ItemgridContext.Provider value={val}>
+            <ItemgridView/>
+        </ItemgridContext.Provider>
+    )
+}
