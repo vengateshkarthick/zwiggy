@@ -1,3 +1,6 @@
+body * {
+  font-family: "Poppins", sans-serif;
+}
 body .navbar {
   background-color: #ffffff;
 }
@@ -8,7 +11,6 @@ body .navbar .link {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: "Poppins", sans-serif;
 }
 body .navbar .link:hover {
   color: #3db34a;
@@ -40,4 +42,9 @@ body .footer ul li {
 }
 body .footer ul li:hover {
   color: blue;
+}
+
+#signin .img {
+  height: "50vh";
+  width: "90%";
 }/*# sourceMappingURL=style.css.map */
